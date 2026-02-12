@@ -1,0 +1,23 @@
+{
+  "name": "http_first",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /http_first/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/mobile": "^5.2.0",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.23"
+  }
+}
